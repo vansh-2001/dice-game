@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <!-- dice game -->
+
+    <section class="p-5 dice-game bg-[#4894f0] h-screen">
+        <div class=" items-center flex flex-col justify-center text-center text-6xl">
+            <div>
+                <button id="btn" class=" bg-red-500 text-white hover:opacity-90 font-bold p-5 m-5 rounded-xl">Roll the
+                    Dice</button>
+            </div>
+            <div class="flex">
+                <div class="player ">
+                    <p id="p" class=" text-3xl player ">Player 1</p>
+
+                    <input id="input-Player1" class=" input1 text-[blue] rounded-md text-lg w-[130px]" type="text" value=""
+                        placeholder="Entere Name">
+
+                    <div id="pl-1" class=" px-12 py-8 m-5 text-6xl border-2 border-black rounded-md ">0</div>
+                </div>
+                <div class=" player ">
+                    <p id="pp" class=" text-3xl ">Player 2</p>
+                    <input id="input-Player2" class=" input2 text-[blue] rounded-md text-lg w-[130px]" type="text" value=""
+                        placeholder="Entere Name">
+                    <div id="pl-2" class=" px-12 py-8 m-5 text-6xl border-2 border-black rounded-md ">0</div>
+                </div>
+
+            </div>
+            <h1 id="result" class="m-5 font-bold"> </h1>
+            <img class=" img hidden w-[300px]" src="https://media1.tenor.com/m/eUf3SaLP194AAAAC/dice-game-roll-dice.gif"
+                alt="">
+        </div>
+
+
+    </section>
+
+
+    <script src="dicejs.js"></script>
+</body>
+
+</html>
